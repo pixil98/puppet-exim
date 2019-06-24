@@ -1,0 +1,5 @@
+---
+exim::supported: true
+exim::package_name: 'exim4'
+exim::service_name: 'exim4'
+

@@ -1,0 +1,4 @@
+---
+exim::supported: false
+exim::package_manage: true
+exim::package_ensure: present
