@@ -1,13 +1,14 @@
+# exim/hiera.yaml
 ---
 version: 5
 
-defaults:  # Used for any hierarchy level that omits these keys.
-  datadir: data         # This path is relative to hiera.yaml's directory.
-  data_hash: yaml_data  # Use the built-in YAML backend.
+defaults:
+  datadir: data
+  data_hash: yaml_data
 
 hierarchy:
-  - name: 'OS values'
+  - name: "OS values"
     path: "os/%{facts.os.family}.yaml"
 
-  - name: 'common'
-    path: 'common.yaml'
+  - name: "Common values"
+    path: "common.yaml"
