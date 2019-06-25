@@ -1,6 +1,6 @@
-# @summary A short summary of the purpose of this class
+# @summary Installs Exim
 #
-# A description of what this class does
+# Installed the Exim package.
 #
 # @example
 #   include exim::install

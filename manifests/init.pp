@@ -5,6 +5,8 @@ class exim (
   Boolean                       $package_manage,
   # Service
   String                        $service_name,
+  # Configuration
+  Stdlib::Absolutepath          $config_dir,
 ) {
   if !lookup('bind::supported') {
     fail('Exim is not supported on your OS')
