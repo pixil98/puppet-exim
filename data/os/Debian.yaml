@@ -3,3 +3,5 @@ exim::supported: true
 exim::package_name: 'exim4'
 exim::service_name: 'exim4'
 
+exim::config_dir: '/etc/exim4'
+exim::exim_group: 'Debian-exim'
