@@ -12,3 +12,6 @@ exim::local_delivery: 'mail_spool'
 exim::local_interfaces:
   - '127.0.0.1'
   - '::1'
+
+# Configuration
+exim::disable_ipv6: false

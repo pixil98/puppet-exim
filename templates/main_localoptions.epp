@@ -1,1 +1,9 @@
 # conf.d/main/00_local-options: Managed by Puppet.
+<%- unless $exim::local_options =~ Undef { -%>
+<%- $exim::local_options.keys.sort.each |$key| { -%>
+<%= $key -%>
+<%- unless $exim::local_options[$key] =="" { -%>
+ = <%= $exim::local_options[$key] %>
+<%- } -%>
+<%- } -%>
+<%- } -%>

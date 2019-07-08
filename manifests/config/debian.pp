@@ -23,5 +23,5 @@ class exim::config::debian {
     content => epp('exim/debian_update-exim4.conf.conf.epp'),
   }
 
-
+  #TODO: Handle conf.d contents?
 }
