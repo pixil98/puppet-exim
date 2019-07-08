@@ -3,5 +3,8 @@ exim::supported: true
 exim::package_name: 'exim4'
 exim::service_name: 'exim4'
 
-exim::config_dir: '/etc/exim4'
-exim::exim_group: 'Debian-exim'
+exim::config::dir: '/etc/exim4'
+exim::config::group: 'Debian-exim'
+
+# update-exim4.conf.conf
+exim::local_directory: 'mail_spool'

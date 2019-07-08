@@ -4,5 +4,9 @@
 #
 class exim::config {
 
+  case $facts['operatingsystem'] {
+    'debian':  { include exim::config::debian }
+    default : { }
+  }
   contain exim::config::main
 }

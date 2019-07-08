@@ -2,3 +2,7 @@
 exim::supported: false
 exim::package_manage: true
 exim::package_ensure: present
+
+exim::config::owner: 'root'
+exim::config::group: 'root'
+exim::config::mode: '0644'
