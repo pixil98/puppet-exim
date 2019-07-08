@@ -8,6 +8,7 @@ class exim (
   # Configuration
   Stdlib::Absolutepath          $config_dir,
   # Options
+  Exim::Config_type             $config_type,
   String                        $local_delivery,
   Array[Stdlib::IP::Address]    $local_interfaces
   #Boolean                       $enable_tls,

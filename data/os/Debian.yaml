@@ -7,6 +7,7 @@ exim::config_dir: '/etc/exim4'
 exim::config::group: 'Debian-exim'
 
 # update-exim4.conf.conf
+exim::config_type: 'local'
 exim::local_delivery: 'mail_spool'
 exim::local_interfaces:
   - '127.0.0.1'
