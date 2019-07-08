@@ -22,7 +22,7 @@ class exim (
   contain exim::service
 
   exec {'update-exim4.conf':
-    path => ['/usr/sbin'],
+    path => ['/usr/sbin', '/usr/bin', '/bin'],
   }
 
   Class['::exim::install']
