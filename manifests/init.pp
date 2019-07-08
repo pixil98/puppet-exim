@@ -9,6 +9,7 @@ class exim (
   Stdlib::Absolutepath          $config_dir,
   # Options
   String                        $local_delivery,
+  Array[Stdlib::IP::Address]    $local_interfaces
   #Boolean                       $enable_tls,
   ) {
   if !lookup('bind::supported') {
