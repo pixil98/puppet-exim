@@ -19,7 +19,7 @@
 
 dc_eximconfig_configtype='local'
 dc_other_hostnames='<%= $facts[fqdn] %>'
-dc_local_interfaces='<%= $exim::local_interfaces.join("; ") %>'
+dc_local_interfaces='<%= $exim::local_interfaces.join(" ; ") %>'
 dc_readhost=''
 dc_relay_domains=''
 dc_minimaldns='false'
