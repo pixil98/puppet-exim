@@ -9,8 +9,8 @@ class exim (
   Stdlib::Absolutepath          $config_dir,
   # Options
   String                        $local_delivery,
-  Boolean                       $enable_tls,
-) {
+  #Boolean                       $enable_tls,
+  ) {
   if !lookup('bind::supported') {
     fail('Exim is not supported on your OS')
   }
