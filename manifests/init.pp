@@ -21,7 +21,9 @@ class exim (
   contain exim::config
   contain exim::service
 
-  exec {'update-exim4.conf': }
+  exec {'update-exim4.conf':
+    path => ['/usr/sbin'],
+  }
 
   Class['::exim::install']
   -> Class['::exim::config']
