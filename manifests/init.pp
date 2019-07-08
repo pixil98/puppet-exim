@@ -11,7 +11,7 @@ class exim (
   String                     $local_delivery,
   Array[Stdlib::IP::Address] $local_interfaces,
   # Options
-  Array[String]              $main_options = [],
+  Hash[String]              $main_options = [],
   ) {
   if !lookup('bind::supported') {
     fail('Exim is not supported on your OS')
