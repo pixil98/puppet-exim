@@ -2,9 +2,9 @@
   "name": "aaron-exim",
   "version": "0.1.0",
   "author": "Aaron Reisman",
-  "summary": "",
+  "summary": "Installs, configures, and manages Exim",
   "license": "Apache-2.0",
-  "source": "",
+  "source": "https://github.com/pixil98/puppet-exim",
   "dependencies": [
 
   ],
